@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="css/weui.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-weui.css">
+    <link rel="stylesheet" type="text/css" href="css/customer_service_application.css">
+</head>
+<body ontouchstart="">
+    <div class="fixed_hd">
+	    <a href="index.html">
+	       <img src="img/icon_back.png">
+	    </a>
+        <span class="fixed_title">售后服务通知单</span>
+    </div>
+    <div class="page">
+	     <div class="page_hd"></div>
+	     <div class="page_bd page_spacing" >
+	     	 <div class="weui-cells__title">基本信息</div>
+		     <div class="weui-cells weui-cells_from">
+		         <div class="weui-cell">
+		             <div class="weui-cell__hd ">
+		                 <label class="weui-label">单位名称</label>
+		             </div>
+		             <div class="weui-cell__bd">
+		                <input class="weui-input" type="text"  placeholder="请输入单位名称">
+		             </div>
+		         </div>
+		     
+		         <div class="weui-cell weui-cells_from">
+		             <div class="weui-cell__hd">
+		                 <label class="weui-label">联系人</label>
+		             </div>
+		            <div class="weui-cell__bd">
+		                <input class="weui-input" type="text"  placeholder="请输入联系人">
+		             </div>
+		          </div>
+		          <div class="weui-cell weui-cells_from">
+		             <div class="weui-cell__hd">
+		                 <label class="weui-label">手机号码</label>
+		             </div>
+		             <div class="weui-cell__bd">
+		                <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入号码">
+		             </div>
+		          </div>
+		           <div class="weui-cell">
+		             <div class="weui-cell__hd ">
+		                 <label class="weui-label">服务地址</label>
+		             </div>
+		             <div class="weui-cell__bd">
+		                <input class="weui-input" type="text"  placeholder="请输入服务地址">
+		             </div>
+		         </div>
+		          <div class="weui-cell">
+		             <div class="weui-cell__hd ">
+		                 <label class="weui-label">销售部联系人</label>
+		             </div>
+		             <div class="weui-cell__bd">
+		                <input class="weui-input" type="text"  placeholder="请输入联系人">
+		             </div>
+		         </div>
+		         <div class="weui-cell">
+		             <div class="weui-cell__hd">
+		                <label for="time" class="weui-label">服务时间</label>
+		             </div>
+			        <div class="weui-cell__bd">
+			            <input class="weui-input" id="time" type="text" >
+			        </div>
+		         </div>     
+		     </div>
+
+
+
+<!-- 产品信息开始 -->
+             <div class="weui-cells__title">产品信息</div>
+             <div class="product-form-preview">
+                <div class="pruduct_box">
+			        <div class="product_hd">
+			            <label class="weui-form-preview__label">产品名称</label>
+			            <input type="text" name="" class="product_ipt"  placeholder="请输入产品名称">
+			        </div>
+			        <div class="product_bd">
+			            <div class="product_item">
+			                <label class="product_label">规格型号</label>
+			                 <input type="text" name="" class="product_ipt" placeholder="请输入型号">
+			            </div>
+			            <div class="product_item">
+			                <label class="product_label">数量(只)</label>
+			                 <input type="number" name="" class="product_ipt" placeholder="请输入数量">
+			            </div>
+			           <div class="product_item">
+			                <label for="time" class="product_label">发货时间</label>
+		                    <input class="weui-input" id="time2" type="text" >
+					       
+			            </div>
+			        </div>
+		        </div>
+		        <div class="product_ft">
+		            <button class="product_btn weui-form-preview__btn_primary more_btn" href="javascript:">添加一条</button>
+		        </div>
+		    </div>
+<!-- 产品信息结束 -->
+<!-- 售后服务开始 -->
+            <div class="weui-cells__title">售后服务工作</div>
+		    <div class="weui-cells weui-cells_form">
+		          <div class="weui-cell">
+		            <div class="weui-cell__bd">
+		              <textarea class="weui-textarea" placeholder="请输入文本" rows="3"></textarea>
+		              <div class="weui-textarea-counter"><span>0</span>/200</div>
+		            </div>
+		          </div>
+		    </div>
+		    <div class="weui-cells weui-cells_form" style="margin-top: 0">
+		        <div class="weui-cell">
+		             <div class="weui-cell__hd ">
+		                 <label class="weui-label">部门经理签字</label>
+		             </div>
+		             <div class="weui-cell__bd">
+		                <input style="text-align: center;" class="weui-input" type="text" disabled="">
+		             </div>
+		        </div>
+		    </div>
+
+		    <div class="weui-cells weui-cells_form" style="margin-top: 0">
+		          <div class="weui-cell">
+		              <div class="weui-cell__hd ">
+		                 <label class="weui-label">售后服务人员</label>
+		             </div>
+		             <div class="weui-cell__bd">
+		                <input style="padding-left: 5px;text-align: center;" class="weui-input" type="text"  placeholder="请输入服务人员">
+		             </div>
+		          </div>
+		    </div>
+
+		    <div class="weui-cells__title">服务结果</div>
+		    <div class="weui-cells weui-cells_form">
+		          <div class="weui-cell">
+		            <div class="weui-cell__bd">
+		              <textarea class="weui-textarea" placeholder="请输入文本" rows="3"></textarea>
+		              <div class="weui-textarea-counter"><span>0</span>/200</div>
+		            </div>
+		          </div>
+		    </div>
+		     <div class="weui-cells__title">客户意见</div>
+		    <div class="weui-cells weui-cells_form">
+		          <div class="weui-cell">
+		            <div class="weui-cell__bd">
+		              <textarea class="weui-textarea" placeholder="请输入文本" rows="3"></textarea>
+		              <div class="weui-textarea-counter"><span>0</span>/200</div>
+		            </div>
+		          </div>
+		    </div>
+
+		     <div class="weui-cells weui-cells_form" style="margin-top: 0">
+		        <div class="weui-cell">
+		             <div class="weui-cell__hd ">
+		                 <label class="weui-label" >客服部经理签字</label>
+		             </div>
+		             <div class="weui-cell__bd">
+		                <input style="text-align: center;" class="weui-input" type="text" disabled="">
+		             </div>
+		        </div>
+		    </div>
+
+<!-- 售后服务结束-->   
+	     </div>
+	     <div class="page_ft" style="height: 30px"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="js/jquery-weui.js"></script>
+    <script type="text/javascript">
+
+    	$("#time").datetimePicker({
+		        title: '出发时间',
+		        min: "1990-12-12",
+		        max: "2022-12-12 12:12",
+		        onChange: function (picker, values, displayValues) {
+		          console.log(values);
+		        }
+      });
+
+    	 $(".more_btn").click(function(){
+            $(".pruduct_box").append('<div class="product_hd"><label class="weui-form-preview__label">产品名称</label><input type="text" name="" class="product_ipt"  placeholder="请输入产品名称"></div><div class="product_bd"><div class="product_item"><label class="product_label">规格型号</label><input type="text" name="" class="product_ipt" placeholder="请输入型号"></div><div class="product_item"><label class="product_label">数量(只)</label><input type="number" name="" class="product_ipt" placeholder="请输入数量"></div><div class="product_item"><label for="time" class="product_label">发货时间</label><input class="weui-input" id="time2" type="text" ></div>')
+    	 })
+    </script>
+     
+</body>
+</html>
