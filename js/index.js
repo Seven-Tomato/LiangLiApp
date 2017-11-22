@@ -38,7 +38,7 @@ $(function() {
 
     /*首页轮播*/
     $(".swiper-container").swiper({
-       /* loop: true,
-        autoplay: 2000*/
+        loop: true,
+        autoplay: 2000
       });
 })
