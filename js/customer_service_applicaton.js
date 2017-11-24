@@ -46,15 +46,15 @@ $(function(){
 /*点击提交验证*/
          
           $(".submit_btn").on("click",function(){
-             var dw_name=$(".dw_name").val(),//单位名称
+             var bh_name=$(".bh_name").val(),//编号
+                 dw_name=$(".dw_name").val(),//单位名称
                  link_man=$(".link_man").val(),//联系人
                  phone_number=$(".phone_number").val(),//手机号码
-                 fw_address=$(".fw_address").val(),//手机服务地址
-                 sh_work=$(".sh_work").val(),//售后服务工作
-                 
-                 service_output=$(".service_output").val();//售后服务工作
+                 fw_address=$(".fw_address").val();//手机服务地址
+                // sh_work=$(".sh_work").val(),售后服务工作
+                // service_output=$(".service_output").val();售后服务工作
                 
-          	 if(!dw_name || !link_man || !phone_number || !fw_address || !sh_work || !service_output){
+          	 if(!bh_name || !dw_name || !link_man || !phone_number || !fw_address ){
                 $.alert("信息填写不完整"); 
                 $(".fw_form").submit(function(){return false;});
           	 }else{

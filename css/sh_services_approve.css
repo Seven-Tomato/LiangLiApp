@@ -1,0 +1,105 @@
+body,html{background-color:  rgba(205, 202, 202, 0.11);}
+.page{margin-top: 3rem;}
+.page_spacing{padding: 0 10px;}
+.page_hd{position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 2rem;
+       
+          font-size: 18px;
+          text-align: center;
+          line-height: 2rem;
+          color:#999;
+      
+          
+}
+.page_hd:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1px solid #D9D9D9;
+    color: #D9D9D9;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+/*顶部固定*/
+.fixed_hd{position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 2rem;
+          z-index: 2;
+          font-size: 18px;
+          text-align: center;
+          line-height: 2rem;
+          background-color: #000;
+          color:#fff;}
+.fixed_hd a{display: inline-block;
+            width: 23px;
+            height:23px;
+            float: left;
+            padding-left: 5px;
+           
+}
+.fixed_hd a img{width: 100%;
+                height: 100%;
+                vertical-align: middle;
+}
+.fixed_hd .flxed_title{margin-left: -5px;}
+/**/
+.apr_item_title{padding: 10px 15px;
+                background-color: #fff;
+                    margin-top: 10px;
+                    position: relative;
+}
+.nav_button{width: 23px;
+            height: 18px;
+            
+            vertical-align: middle;
+            padding: 7px 5px;
+}
+.bh_box{display: inline-block;
+        vertical-align: middle;
+        padding:0 0 0 10px;
+
+
+} 
+.bh_box_input{
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    background-color: transparent;
+    font-size: inherit;
+    color: inherit;
+    height: 1.41176471em;
+    line-height: 1.41176471;
+    vertical-align: middle;
+    color: #999;
+   
+
+}
+
+.qs_btn{position: absolute;
+        right: 15px;
+        top: 10px;
+}
+.apr_item_measge{background-color: #fff;
+                
+}
+/*重置weui的样式*/
+.weui-cell{padding:5px 15px;
+           font-size: 15px;
+}
+.weui-label{padding-left: 5px;}
+.weui-input{color:#999;
+          
+}
+.weui-textarea{background: rgb(241, 240, 240);
+               color:#747272;
+}
